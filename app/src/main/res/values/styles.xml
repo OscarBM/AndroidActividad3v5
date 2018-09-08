@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CasualBold">
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SansSerifBold">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SerifMonospaceItalic">
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="CursiveBold">
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CursiveItalic">
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="CasualItalic">
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="SansSerifCondensedNormal">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="CursiveNormal">
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="SansSerifCondensedBold">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
