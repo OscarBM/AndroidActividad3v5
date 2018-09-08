@@ -7,6 +7,7 @@ import android.support.annotation.RequiresApi;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
@@ -39,25 +40,20 @@ public class MainActivity extends Activity implements
     public boolean onTouchEvent(MotionEvent event){
         this.mDetector.onTouchEvent(event);
         textView = findViewById(R.id.hola_mundo);
-        //textView.setText("Touch coordinates : " +
-                //String.valueOf(event.getX()) + "x" + String.valueOf(event.getY()));
-        //textView.setTextColor(Color.RED);//Opaca a los demas
-
+        /*textView.setText("Touch coordinates : " +
+                String.valueOf(event.getX()) + "x" + String.valueOf(event.getY()));
+        textView.setTextColor(Color.RED);//Opaca a los demas
+        */
         /*view = this.getWindow().getDecorView();
-        view.setBackgroundColor(Color.BLACK);*/
+        view.setBackgroundColor(Color.BLACK);*/ //Opaca a los demas
 
         return super.onTouchEvent(event);
     }
 
     @Override
-    public boolean onDown(MotionEvent event) {//No jala //CRASHEA
-        /*textView.setText("Touch coordinates : " +
-                String.valueOf(event.getX()) + "x" + String.valueOf(event.getY()));
-        textView.setTextColor(Color.MAGENTA);*/
-        //textView.setText("on down");
-        //textView.setText("On Down On Down On Down On Down");
-        //textView.setTextColor(Color.WHITE);
-        return false;
+    public boolean onDown(MotionEvent event) {
+        Log.d(debugTag,"on Down event presente");//Crashea si tratas de cambiar el texto o la pantalla
+        return true;
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
